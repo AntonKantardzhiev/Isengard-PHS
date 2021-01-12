@@ -42,8 +42,7 @@
     }
 </style>
 
-
-<body class="bg-dark">
+<body class="bg-light m-0">
 
 <!-- Add your site or application content here -->
 
@@ -51,17 +50,17 @@
 <!--NAVIGATION-->
 <!-------------->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Isengard Publishing</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <a class="navbar-brand" href="#">Navigation</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse d-flex flex-row" id="navbarSupportedContent">
-        <ul class="navbar-nav nav-pills nav-fill">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
             <li class="nav-item">
-                <a class="nav-link active dark" href="#">Home<span class="sr-only">(current)</span></a>
+                <a class="nav-link active dark" aria-current="page" href="#">Home<</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link px-4" href="#">About us</a>
@@ -75,17 +74,18 @@
             <li class="nav-item">
                 <a class="nav-link px-4" href="#">Contact</a>
             </li>
-            <!--            <li class="nav-item dropdown">-->
-            <!--                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
-            <!--                    Dropdown-->
-            <!--                </a>-->
-            <!--                <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
-            <!--                    <a class="dropdown-item" href="#">Action</a>-->
-            <!--                    <a class="dropdown-item" href="#">Another action</a>-->
-            <!--                    <div class="dropdown-divider"></div>-->
-            <!--                    <a class="dropdown-item" href="#">Something else here</a>-->
-            <!--                </div>-->
-            <!--            </li>-->
+<!--            <li class="nav-item dropdown">-->
+<!--                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"-->
+<!--                   aria-haspopup="true" aria-expanded="false">-->
+<!--                    Dropdown-->
+<!--                </a>-->
+<!--                <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+<!--                    <a class="dropdown-item" href="#">Action</a>-->
+<!--                    <a class="dropdown-item" href="#">Another action</a>-->
+<!--                    <div class="dropdown-divider"></div>-->
+<!--                    <a class="dropdown-item" href="#">Something else here</a>-->
+<!--                </div>-->
+<!--            </li>-->
             <li class="nav-item">
                 <a class="nav-link disabled" href="#">Disabled</a>
             </li>
@@ -105,90 +105,112 @@
 <!--MAIN BODY-->
 <!------------->
 
-<main class="text-center w-100">
+<main class="w-100">
     <h1 class="bg-light">PAGE CONTENT SON</h1>
     <div class="parallax"></div>
 
     <div class="container w-75">
-<!--        Row 1-->
-        <div class="row w-75 mx-auto my-auto">
-            <div class="col-12">
-                <div class="p3 rounded-3 bg-light">
-                    <h1>THERE SHOULD BE TEXT HERE</h1>
-                </div>
+        <!--        Row 1-->
+        <div class="col-12 text-center">
+            <div class="p3 rounded-3 bg-light text-primary fst-italic ">
+                <h1><q>WE HAVE A MIND OF METAL AND WHEELS</q></h1>
             </div>
-
         </div>
+        <br>
 
-<!--        row 2-->
-        <div class="row w-100 mx-auto my-auto">
+        <!--------- -->
+        <!--CAROUSEL-->
+        <!------------>
 
-            <!--------- -->
-            <!--CAROUSEL-->
-            <!------------>
+        <div id="myCarouselIndicators" class="carousel slide" data-ride="carousel">
+            <!--            Carousel indicators-->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarouselIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarouselIndicators" data-slide-to="1"></li>
+                <li data-target="#myCarouselIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner w-100 h-50" role="listbox">
 
-            <div id="myCarouselIndicators" class="carousel slide" data-ride="carousel">
-                <!--            Carousel indicators-->
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarouselIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarouselIndicators" data-slide-to="1"></li>
-                    <li data-target="#myCarouselIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner w-100 h-50" style=" width:100%; height: 500px !important;">>
-
-                    <!--                CAROUSEL ITEMS-->
-                    <!--                mordor item-->
-                    <div class="carousel-item active w-100 h-100">
-                        <img class="d-block w-100 h-auto" src="img/juliancalle-mordor-1-fdb28c7f-x1b0.jpeg"
-                             alt="First slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Mordor</h5>
-                        </div>
+                <!--                CAROUSEL ITEMS-->
+                <!--                mordor item-->
+                <div class="carousel-item active w-100 h-100">
+                    <img class="d-block w-100 h-auto" src="img/juliancalle-mordor-1-fdb28c7f-x1b0.jpeg"
+                         alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Mordor</h5>
                     </div>
-                    <!--                isengard item-->
-                    <div class="carousel-item w-100 h-100">
-                        <img class="d-block w-100 h-auto" src="img/isengard.jpeg" alt="Second slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Isengard</h5>
-                        </div>
-                    </div>
-                    <!--                gondor item-->
-                    <div class="carousel-item w-100 h-100">
-                        <img class="d-block w-100 h-auto" src="img/siegeofgondor.jpeg" alt="Third slide">
-                        <div class="carousel-caption d-md-block">
-                            <h5>Gondor</h5>
-                        </div>
-                    </div>
-
                 </div>
-                <!--            Carousel controllers-->
-                <a class="carousel-control-prev" href="#myCarouselndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#myCarouselIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-            <!--Carousel End-->
-        </div>
-<!--        row 3-->
-        <div class="row cols-auto">
-            <div id="introduction" class="col w-100 bg-secondary rounded-3">
+                <!--                isengard item-->
+                <div class="carousel-item w-100 h-100">
+                    <img class="d-block w-100 h-auto" src="img/isengard.jpeg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Isengard</h5>
+                    </div>
+                </div>
+                <!--                gondor item-->
+                <div class="carousel-item w-100 h-100">
+                    <img class="d-block w-100 h-auto" src="img/siegeofgondor.jpeg" alt="Third slide">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Gondor</h5>
+                    </div>
+                </div>
 
             </div>
+            <!--            Carousel controllers-->
+            <a class="carousel-control-prev" href="#myCarouselndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!--Carousel End-->
+        <br>
+        <div id="introduction" class="col bg-primary text-light rounded-3 p-4">
+            <h3>What are we about?</h3>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi architecto at atque dolor ducimus
+                enim et id illum laboriosam minima, molestiae quaerat saepe sapiente similique vel veniam veritatis
+                voluptatibus.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto, corporis dolore eaque
+                minima non numquam optio perferendis placeat quasi quia recusandae temporibus! Iste libero maiores minus
+                mollitia nulla sed.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A debitis delectus, doloribus eligendi error
+                hic illum in inventore laborum minus molestiae, mollitia nisi odit omnis ratione soluta ullam veniam
+                veritatis.</p>
         </div>
     </div>
 </main>
-
+<br>
 <!---------->
 <!--FOOTER-->
 <!---------->
 
 <footer>
-    <div class="text-center">
-        <p>This goes at the bottom of the page</p>
+    <div class="text-center bg-primary m-0">
+        <div class="row row-cols-3">
+            <div class="col col-4 p-4 text-start text-light">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, error fugiat illum nulla quo
+                        repudiandae sed voluptates. Ad asperiores dignissimos ipsum laboriosam, necessitatibus
+                        perferendis, quam quibusdam rerum temporibus vel voluptatibus.</p>
+            </div>
+            <div class="col col-4 p-4 text-start text-light">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, debitis esse facilis
+                    ipsa
+                    natus sapiente soluta voluptates? Ducimus expedita illo ipsam itaque necessitatibus non praesentium
+                    quaerat quidem voluptas voluptate!
+            </div>
+            <div class="col col-4 p-4 text-start text-light">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut debitis delectus dicta distinctio
+                    doloremque eligendi impedit incidunt libero maiores mollitia non nostrum odio, odit quasi quis
+                    tenetur
+                    unde, vero voluptatibus!
+            </div>
+        </div>
+        <hr>
+        <h6 class="mb-0 text-light">This goes at the bottom of the page</h6>
     </div>
 </footer>
 
