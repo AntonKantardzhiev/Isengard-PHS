@@ -26,17 +26,18 @@
 <!-----------------!!!WARNING!!!----------------------->
 <!--THIS PIECE OF CODE SHOULD BE PUT INTO A .CSS FILE-->
 <!---------!!!REMOVE FOR FINAL PUBLICATION!!!---------->
+
 <style>
     .parallax {
         /* The image used */
         background-image: url("img/juliancalle-mordor-1-fdb28c7f-x1b0.jpeg");
 
         /* Set a specific height */
-        height: 300px;
+        height: 450px;
 
         /* Create the parallax scrolling effect */
         background-attachment: fixed;
-        background-position: center;
+        background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -46,59 +47,58 @@
 
 <!-- Add your site or application content here -->
 
-<!-------------->
-<!--NAVIGATION-->
-<!-------------->
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
-    <a class="navbar-brand" href="#">Navigation</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
-            <li class="nav-item">
-                <a class="nav-link active dark" aria-current="page" href="#">Home<</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link px-4" href="#">About us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link px-4" href="#">Our Books</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link px-4" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link px-4" href="#">Contact</a>
-            </li>
-<!--            <li class="nav-item dropdown">-->
-<!--                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"-->
-<!--                   aria-haspopup="true" aria-expanded="false">-->
-<!--                    Dropdown-->
-<!--                </a>-->
-<!--                <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
-<!--                    <a class="dropdown-item" href="#">Action</a>-->
-<!--                    <a class="dropdown-item" href="#">Another action</a>-->
-<!--                    <div class="dropdown-divider"></div>-->
-<!--                    <a class="dropdown-item" href="#">Something else here</a>-->
-<!--                </div>-->
-<!--            </li>-->
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-        </ul>
-    </div>
-</nav>
 
 <!---------->
 <!--HEADER-->
 <!---------->
 
 <header>
+    <!-------------->
+    <!--NAVIGATION-->
+    <!-------------->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark shadow">
+        <a class="navbar-brand" href="#">Navigation</a>
 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active dark" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-4" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-4" href="#">Our Books</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-4" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-4" href="#">Contact</a>
+                </li>
+                <!--            <li class="nav-item dropdown">-->
+                <!--                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"-->
+                <!--                   aria-haspopup="true" aria-expanded="false">-->
+                <!--                    Dropdown-->
+                <!--                </a>-->
+                <!--                <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+                <!--                    <a class="dropdown-item" href="#">Action</a>-->
+                <!--                    <a class="dropdown-item" href="#">Another action</a>-->
+                <!--                    <div class="dropdown-divider"></div>-->
+                <!--                    <a class="dropdown-item" href="#">Something else here</a>-->
+                <!--                </div>-->
+                <!--            </li>-->
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </header>
 
 <!------------->
@@ -106,22 +106,22 @@
 <!------------->
 
 <main class="w-100">
-    <h1 class="bg-light">PAGE CONTENT SON</h1>
-    <div class="parallax"></div>
-
-    <div class="container w-75">
-        <!--        Row 1-->
-        <div class="col-12 text-center">
-            <div class="p3 rounded-3 bg-light text-primary fst-italic ">
-                <h1><q>WE HAVE A MIND OF METAL AND WHEELS</q></h1>
+    <!--    look into making a better parallax system, this will do for now-->
+    <div class="container-fluid w-100 text-center">
+        <div class="w-100">
+            <div class="parallax w-100"></div>
+            <div class="centered">
+                <h1 class="display-5"><q>WE HAVE A MIND OF METAL AND WHEELS</q></h1>
             </div>
         </div>
-        <br>
+    </div>
 
-        <!--------- -->
-        <!--CAROUSEL-->
-        <!------------>
+    <br>
 
+    <!--------- -->
+    <!--CAROUSEL-->
+    <!------------>
+    <div class="container">
         <div id="myCarouselIndicators" class="carousel slide" data-ride="carousel">
             <!--            Carousel indicators-->
             <ol class="carousel-indicators">
@@ -157,7 +157,7 @@
 
             </div>
             <!--            Carousel controllers-->
-            <a class="carousel-control-prev" href="#myCarouselndicators" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#myCarouselIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
@@ -167,6 +167,8 @@
             </a>
         </div>
         <!--Carousel End-->
+
+
         <br>
         <div id="introduction" class="col bg-primary text-light rounded-3 p-4">
             <h3>What are we about?</h3>
@@ -189,28 +191,37 @@
 <!---------->
 
 <footer>
-    <div class="text-center bg-primary m-0">
-        <div class="row row-cols-3">
-            <div class="col col-4 p-4 text-start text-light">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, error fugiat illum nulla quo
-                        repudiandae sed voluptates. Ad asperiores dignissimos ipsum laboriosam, necessitatibus
-                        perferendis, quam quibusdam rerum temporibus vel voluptatibus.</p>
+    <div class="container-fluid bg-primary w-100">
+        <div class="row row-cols-1 row-cols-sm-3 justify-content-evenly">
+            <div id="links1" class="col col-auto w-25 text-start text-light">
+                <h5>Links</h5>
+                <ul>
+                    <li>f</li>
+                    <li>b</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, error fugiat illum nulla quo
+                    repudiandae sed voluptates. Ad asperiores dignissimos ipsum laboriosam, necessitatibus
+                    perferendis, quam quibusdam rerum temporibus vel voluptatibus.</p>
             </div>
-            <div class="col col-4 p-4 text-start text-light">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, debitis esse facilis
+            <div id="links2" class="col col-auto w-25 text-start text-light">
+                <h5>FAQ</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, debitis esse facilis
                     ipsa
                     natus sapiente soluta voluptates? Ducimus expedita illo ipsam itaque necessitatibus non praesentium
-                    quaerat quidem voluptas voluptate!
+                    quaerat quidem voluptas voluptate!</p>
             </div>
-            <div class="col col-4 p-4 text-start text-light">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut debitis delectus dicta distinctio
+            <div id="links3" class="col col-auto w-25 text-start text-light">
+                <h5>more links</h5>
+
+                <a href="tel:0472-13-30-21">CLICK TO CALL</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut debitis delectus dicta distinctio
                     doloremque eligendi impedit incidunt libero maiores mollitia non nostrum odio, odit quasi quis
                     tenetur
-                    unde, vero voluptatibus!
+                    unde, vero voluptatibus!</p>
             </div>
         </div>
         <hr>
-        <h6 class="mb-0 text-light">This goes at the bottom of the page</h6>
+        <h6 class="m-0 text-light text-center">Congratulations! You have reached the end of the page.</h6>
     </div>
 </footer>
 
