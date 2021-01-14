@@ -4,15 +4,17 @@
 <head>
     <meta charset="utf-8">
     <title>Isengard Fantasy Books</title>
-    <meta name="description" content="">
+    <meta name="description" content="Isengard books, authors, employees, and more!">
+    <meta name="author" content="Kai Helsen">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:title" content="">
-    <meta property="og:type" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
+    <meta property="og:title" content="Isengard Publishings">
+    <meta property="og:type" content="Fantasy novel publishing & source of Uruks">
+    <meta property="og:url" content="img/isengard.jpeg">
+    <meta property="og:image" content="img/isengard.jpeg">
 
     <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" type="imgage/png" href="icon.png">
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
 
@@ -45,7 +47,7 @@
     }
 </style>
 
-<body class="stage m-0">
+<body class="bg-success m-0">
 
 <!-- Add your site or application content here -->
 
@@ -118,14 +120,15 @@
     <!--    look into making a better parallax system, this will do for now-->
     <!--    I tried. Perspective for parallax is not working the way it should.-->
     <!--    This solution is rather rough around the edges, but it works. That's what matters most right now.-->
-    <div class="container-fluid w-100 text-center">
+    <div class="container-fluid w-100 bg-dark rounded-bottom text-center">
         <div class="w-100">
             <!--            parallax item-->
-            <!--            <div class="parallax w-100"></div>-->
-            <div class="parallax-window" data-parallax="scroll"
-                 data-image-src="img/juliancalle-mordor-1-fdb28c7f-x1b0.jpeg"></div>
-            <div class="mx-auto bg-dark text-light">
-                <h1 class="display-5 p-2"><q>WE HAVE A MIND OF METAL AND WHEELS</q></h1>
+                        <div class="parallax w-100"></div>
+<!--            <div class="parallax-window" data-parallax="scroll"-->
+<!--                 data-image-src="img/juliancalle-mordor-1-fdb28c7f-x1b0.jpeg"></div>-->
+<!--            <div class="mx-auto bg-dark text-light">-->
+
+                <h1 class="display-5 p-2 text-light"><q>WE HAVE A MIND OF METAL AND WHEELS</q></h1>
             </div>
         </div>
     </div>
@@ -151,18 +154,18 @@
                 <div class="carousel-item active w-100 h-100">
                     <img class="d-block w-100 h-auto" src="img/juliancalle-mordor-1-fdb28c7f-x1b0.jpeg"
                          alt="First slide">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-md-block">
                         <h5>Mordor</h5>
-                        <p>Where Sauron dwells</p>
+                        <p>Lowest real estate prices in Middle Earth.</p>
                     </div>
                 </div>
 
                 <!--                isengard item-->
                 <div class="carousel-item w-100 h-100">
                     <img class="d-block w-100 h-auto" src="img/isengard.jpeg" alt="Second slide">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-md-block">
                         <h5>Isengard</h5>
-                        <p>Saruman's fortress of industry</p>
+                        <p>The Ents won't like this</p>
                     </div>
                 </div>
 
@@ -363,7 +366,7 @@
                         <a href="#" class="btn btn-primary text-center text-light">item 2</a>
                     </li>
                     <li class="list-group-item bg-transparent p-0">
-                        <a href="tel:123-456-7890p123">Call us!</a>
+                        <a href="tel:123-456-7890p123" class="btn btn-primary text-center text-light "><b>Call us!</b></a>
                     </li>
                 </ul>
             </div>
@@ -390,15 +393,16 @@
         crossorigin="anonymous"></script>
 
 <!--parallax scripts-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="/path/to/parallax.js"></script>
+<!--so this one doesn't work either, ffs-->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+<!--<script src="/path/to/parallax.js"></script>-->
 
-<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-<!--  <script>-->
-<!--    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;-->
-<!--    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')-->
-<!--  </script>-->
-<!--  <script src="https://www.google-analytics.com/analytics.js" async></script>-->
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID.-->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
