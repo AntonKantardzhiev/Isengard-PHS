@@ -45,7 +45,7 @@
     }
 </style>
 
-<body class="bg-light m-0">
+<body class="stage m-0">
 
 <!-- Add your site or application content here -->
 
@@ -80,10 +80,10 @@
                         <a class="nav-link px-4" href="#">Our Books</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-4" href="#">Blog</a>
+                        <a class="nav-link px-4" href="blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-4" href="#">Contact</a>
+                        <a class="nav-link px-4" href="contact.html">Contact</a>
                     </li>
                     <!--            <li class="nav-item dropdown">-->
                     <!--                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"-->
@@ -116,11 +116,16 @@
 
 <main class="w-100">
     <!--    look into making a better parallax system, this will do for now-->
+    <!--    I tried. Perspective for parallax is not working the way it should.-->
+    <!--    This solution is rather rough around the edges, but it works. That's what matters most right now.-->
     <div class="container-fluid w-100 text-center">
         <div class="w-100">
-            <div class="parallax w-100"></div>
-            <div class="centered">
-                <h1 class="display-5 align-text-bottom"><q>WE HAVE A MIND OF METAL AND WHEELS</q></h1>
+            <!--            parallax item-->
+            <!--            <div class="parallax w-100"></div>-->
+            <div class="parallax-window" data-parallax="scroll"
+                 data-image-src="img/juliancalle-mordor-1-fdb28c7f-x1b0.jpeg"></div>
+            <div class="mx-auto bg-dark text-light">
+                <h1 class="display-5 p-2"><q>WE HAVE A MIND OF METAL AND WHEELS</q></h1>
             </div>
         </div>
     </div>
@@ -184,10 +189,9 @@
         </div>
         <!--Carousel End-->
 
-
         <br>
         <div class="d-block mx-auto w-100">
-            <div id="introduction" class="col bg-primary text-light rounded-3 p-4 shadow w-75 mx-auto ">
+            <div id="introduction" class="col bg-primary text-light rounded-3 p-4 shadow w-100 mx-auto ">
                 <h3>What are we about?</h3>
                 <br>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi architecto at atque dolor
@@ -204,51 +208,94 @@
                     veritatis.</p>
             </div>
         </div>
-        <div class="row m-3 mx-auto w-75">
+        <br>
 
-            <div class="col-3">
-                <div class="bg-primary rounded-3 p-2">
-                    <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut deleniti eveniet excepturi
-                        explicabo
-                        incidunt maiores nemo odio, optio placeat porro praesentium provident qui quos rerum sapiente,
-                        totam
-                        ullam voluptas voluptates?</p>
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 mx-auto g-0 w-100">
+
+            <div class="col">
+                <div class="mg-2">
+                    <div class="bg-primary rounded-3 p-2 m-1">
+                        <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut deleniti
+                            eveniet
+                            excepturi
+                            explicabo
+                            incidunt maiores nemo odio, optio placeat porro praesentium provident qui quos rerum
+                            sapiente,
+                            totam
+                            ullam voluptas voluptates?</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-3">
-                <div class="bg-primary rounded-3 p-2">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut deleniti eveniet excepturi
-                        explicabo
-                        incidunt maiores nemo odio, optio placeat porro praesentium provident qui quos rerum sapiente,
-                        totam
-                        ullam voluptas voluptates?</p>
+            <div class="col">
+                <div class="mg-2">
+                    <div class="bg-primary rounded-3 p-2 m-1">
+                        <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut deleniti
+                            eveniet
+                            excepturi
+                            explicabo
+                            incidunt maiores nemo odio, optio placeat porro praesentium provident qui quos rerum
+                            sapiente,
+                            totam
+                            ullam voluptas voluptates?</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-3">
-                <div class="bg-primary rounded-3 p-2">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut deleniti eveniet excepturi
-                        explicabo
-                        incidunt maiores nemo odio, optio placeat porro praesentium provident qui quos rerum sapiente,
-                        totam
-                        ullam voluptas voluptates?</p>
+            <div class="col">
+                <div class="mg-2">
+                    <div class="bg-primary rounded-3 p-2 m-1">
+                        <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut deleniti
+                            eveniet
+                            excepturi
+                            explicabo
+                            incidunt maiores nemo odio, optio placeat porro praesentium provident qui quos rerum
+                            sapiente,
+                            totam
+                            ullam voluptas voluptates?</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-3">
-                <div class="bg-primary rounded-3 p-2">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut deleniti eveniet excepturi
-                        explicabo
-                        incidunt maiores nemo odio, optio placeat porro praesentium provident qui quos rerum sapiente,
-                        totam
-                        ullam voluptas voluptates?</p>
+            <div class="col">
+                <div class="mg-2">
+                    <div class="bg-primary rounded-3 p-2 m-1">
+                        <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut deleniti
+                            eveniet
+                            excepturi
+                            explicabo
+                            incidunt maiores nemo odio, optio placeat porro praesentium provident qui quos rerum
+                            sapiente,
+                            totam
+                            ullam voluptas voluptates?</p>
+                    </div>
                 </div>
             </div>
-
 
 
         </div>
+
+        <br>
+        <div class="row" id="bookExample">
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-8 col-lg-75 bg-primary rounded-3 shadow-sm mx-auto">
+
+                <div class="row row-cols-2 mx-auto p-4 ">
+                    <div class="col col-6 shadow my-0 py-3 px-5 bg-light rounded-start">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore impedit quae veritatis
+                            vitae? Commodi deleniti eaque, facere harum incidunt inventore magnam necessitatibus quasi
+                            quia quisquam quos ratione recusandae, sed voluptates.</p>
+                    </div>
+
+                    <div class="col col-6 shadow my-0 py-3 px-5 bg-light rounded-end">
+                        <h3>jsladjflajsdfljsakd</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore impedit quae veritatis
+                            vitae? Commodi deleniti eaque, facere harum incidunt inventore magnam necessitatibus quasi
+                            quia quisquam quos ratione recusandae, sed voluptates.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </main>
 <br>
@@ -345,6 +392,9 @@
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
 
+<!--parallax scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/path/to/parallax.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <!--  <script>-->
