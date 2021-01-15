@@ -25,7 +25,10 @@
 	<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark shadow">
 		<div class="container-fluid">
 			<!--            toggle navbar button-->
-			<a class="navbar-brand" href="#"><img src="img/isengard-icon-64x64.png" alt="isengard logo" class="rounded float-sm-start"></a>
+			<a class="navbar-brand" href="#">
+				<img src="img/isengard-icon-64x64.png" alt="navigation icon" width="64" height="64">
+				<!--                Navbar-->
+			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 					aria-expanded="false" aria-label="Toggle navigation">
@@ -35,19 +38,19 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
 					<li class="nav-item">
-						<a class="nav-link dark" href="index.html">Home</a>
+						<a class="nav-link dark" aria-current="page" href="#">Home</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link px-4" href="about/about.html">About us</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link px-4" href=" published_books.html">Our Books</a>
+						<a class="nav-link px-4" href="published_books.html">Our Books</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link px-4 active" href="blog.html">Blog</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link px-4" aria-current="page" href="contact.html">Contact</a>
+						<a class="nav-link px-4" href="contact.html">Contact</a>
 					</li>
 					<!--            <li class="nav-item dropdown">-->
 					<!--                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"-->
@@ -119,18 +122,18 @@
 				<div>
 
 					<img src="img/boardgame.jpg" alt="board games">
-					<h3>Libraries of the World</h3>
-					<p class="text-secondary">Get to know the most interesting places to read</p>
+					<h3>Board Games for Adults</h3>
+					<p class="text-secondary">Explore the most fun games to play with your friends.<a href="https://www.goodhousekeeping.com/childrens-products/board-games/g5113/best-board-games-for-adults/" target="_blank" class="btn-sm" role="button">Read More</a></p>
 				</div>
 			<div>
 				<img src="img/library.jpeg " alt="cozy library" >
 				<h3>Libraries of the World</h3>
-				<p class="text-secondary">Get to know the most interesting places to read</p>
+				<p class="text-secondary">Get to know the most interesting places to read. <a href="https://www.thebestcolleges.org/amazing-libraries/" target="_blank" class="btn-sm" role="button">Read More</a></p>
 			</div>
 			<div>
 			<img src="img/bestbook.jpg" alt="books">
-			<h3>Libraries of the World</h3>
-			<p class="text-secondary">Get to know the most interesting places to read</p>
+			<h3>Best Fantasy Book</h3>
+			<p class="text-secondary">Get to know the most trending book from this year. <a href="https://www.amazon.com/Best-Sellers-Kindle-Store-Fantasy/zgbs/digital-text/158576011" target="_blank" class="btn-sm" role="button">Read More</a> </p>
 		</div>
 		</div>
 
@@ -156,29 +159,29 @@
 
 		<img src="img/magicman.jpg" alt=man-lord-of-the-rings">
 		<div>
-			<h1>The Loruki Platform</h1>
-			<cite>May 11,David G.</cite>
+			<h1>Released New Lord of the Rings</h1>
+			<cite>May 11,Camila S.</cite>
 			<p>
 				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor cupiditate dignissimos temporibus perspiciatis quae! Suscipit qui, consectetur ea consequatur, doloribus repellendus quasi, aut corporis nam alias culpa. Nostrum, inventore accusantium!
-			</p>
+				<a href="https://www.indiewire.com/gallery/amazons-lord-of-the-rings-explained-plot-cast/" target="_blank" class="btn-sm" role="button">Read More</a></p>
 		</div>
 
 		<img src="img/fantasy.jpg" alt="book-in-table">
 		<div>
-			<h1>The Loruki Platform</h1>
-			<cite>May 11,David G.</cite>
+			<h1>Write Your Own Book</h1>
+			<cite>May 11,Julia T.</cite>
 			<p>
 				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor cupiditate dignissimos temporibus perspiciatis quae! Suscipit qui, consectetur ea consequatur, doloribus repellendus quasi, aut corporis nam alias culpa. Nostrum, inventore accusantium!
-			</p>
+				<a href="https://www.createmybooks.com/BE/en/write-a-book" target="_blank" class="btn-sm" role="button">Read More</a></p>
 		</div>
 
 		<img src="img/quotesisen.jpg" alt="qoute-magic">
 		<div>
-			<h1>The Loruki Platform</h1>
-			<cite>May 11,David G.</cite>
+			<h1>Follow this Steps and Get Published</h1>
+			<cite>May 11,Daniel Z.</cite>
 			<p>
 				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor cupiditate dignissimos temporibus perspiciatis quae! Suscipit qui, consectetur ea consequatur, doloribus repellendus quasi, aut corporis nam alias culpa. Nostrum, inventore accusantium!
-			</p>
+				<a href="https://www.janefriedman.com/start-here-how-to-get-your-book-published/" target="_blank" class="btn-sm" role="button">Read More</a></p>
 		</div>
 	</div>
 </section>
@@ -254,6 +257,19 @@
 
 </footer>
 
+<!----------->
+<!--scripts-->
+<!----------->
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!--bootstrap scripts-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+		crossorigin="anonymous"></script>
 
 
 

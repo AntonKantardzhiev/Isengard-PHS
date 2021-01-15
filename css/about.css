@@ -151,7 +151,7 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-
+/*  making the buttons red  */
 .clearfix::before,
 .clearfix::after {
     content: " ";
@@ -160,6 +160,28 @@ textarea {
 
 .clearfix::after {
     clear: both;
+}
+
+/* Making the text red */
+.carousel-inner {
+    font-size: medium;
+    line-height: 1.3;
+    color: #7c1c1c;
+    text-align:left ;
+}
+.carousel-inner:hover {
+    font-family: 'Lobster', cursive;
+    color: #a42323;
+    font-size: 103%;
+}
+
+/* making the background */
+
+.bg-secondary {
+
+    background: -webkit-linear-gradient(-180deg, rgb(209, 232, 226), rgb(44, 53, 49));
+    background: linear-gradient(-180deg, rgb(209, 232, 226), rgb(44, 53, 49));
+
 }
 
 /* ==========================================================================
@@ -179,13 +201,12 @@ textarea {
     /* Style adjustments for high resolution devices */
 }
     /* Carousel-buttons */
-.top-content .carousel-indicators li {
-    width: 16px;
-    height: 16px;
-    margin-left: 5px;
-    margin-right: 5px;
-    background-color: #c593d8;
-    border-radius: 50%;
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
 /* ==========================================================================
    Print styles.
