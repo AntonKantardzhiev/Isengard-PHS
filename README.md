@@ -2,7 +2,7 @@
 ## Fantasy Novel Publishing
 [home page](https://kaihelsen.github.io/Isengard-PHS/?)
 
-![alt text](https://github.com/KaiHelsen/Isengard-PHS/blob/main/img/isengard.jpeg?raw=true)
+![alt text](https://github.com/KaiHelsen/Isengard-PHS/blob/main/img/isgengard-preview.png?raw=true)
 
 ### MADE BY:
     Anton Kantartzhiev
