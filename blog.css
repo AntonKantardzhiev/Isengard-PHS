@@ -1,0 +1,301 @@
+/*variables used a lot of times in the document*/
+:root{
+    --primary-color:#116466;
+    --secondary-color:#2c3531;
+    --third-color:#d9b08c;
+    --forth-color:#ffcb9a;
+    --fith-color:#d1E8e2;
+
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    color: #333;
+    line-height: 1.6;
+}
+p{
+    margin: 10px 0;
+}
+
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*utilities classes I'll use around the website*/
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 5px 10px black ;(0 0 0 0.2);
+    padding: 20px;
+    margin: 10px;
+    color: #116466;
+
+}
+.text-center{
+    text-align: center;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    align-content: center;
+
+}
+
+.grid-3{
+    grid-template-columns: 1fr 1fr 1fr;
+    image-resolution: normal;
+    max-height: 100%;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #116466;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    transform: scale(0.96);
+}
+/* paralax start*/
+
+.parallax {
+    /* The image used */
+    height: 600px;
+    background-image: url("https://images.unsplash.com/photo-1453791052107-5c843da62d97?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
+    color: ghostwhite;
+    position: relative;
+
+    /*--parallax scrolling--*/
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.parallax h1{
+    font-size: 70px;
+    text-align: center;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 10px;
+
+}
+.parallax p{
+    margin: 10px 0;
+
+}
+
+.parallax .grid{
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+    overflow: visible;
+}
+
+
+/*------form-------*/
+.parallax-form{
+    position:relative;
+    padding: 40px;
+    height: 300px;
+    width: 300px;
+    justify-self: flex-end;
+}
+.parallax-form.form-control{
+    margin: 30px 0;
+    padding: 10px;
+}
+.parallax-form input{
+    border: 0;
+    border-bottom: 1px solid #2c3531;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+.form{
+    padding: 15px;
+}
+/*-------------edit specific input format -------
+.parallax-form input [type="submit"]  {
+    background-color:  black;
+}
+-----------------------------------------------*/
+
+/*-------------POPUlAR BEGGINS -------*/
+.popular{
+    padding-top: 50px;
+}
+.popular-header{
+    max-width: 500px;
+    margin:auto;
+
+}
+.popular .grid h3{
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+
+.popular .grid p{
+    font-size: 12px;
+}
+
+/*--------other news -------*/
+.newsheader{
+    background-color: #116466;
+    width: 100%;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+
+/*-------------Margin -------*/
+.my-1{
+    margin: 1rem 0;
+}
+.my-2{
+    margin: 1.5rem 0;
+}
+.my-3{
+    margin: 2rem 0;
+}
+.my-4{
+    margin: 3rem 0;
+}
+.my-5{
+    margin: 4rem 0;
+}
+.m-1{
+    margin: 1rem 0;
+}
+.m-2{
+    margin: 1.5rem 0;
+}
+.m-3{
+    margin: 2rem 0;
+}
+.m-4{
+    margin: 3rem 0;
+}
+.m-5{
+    margin: 4rem 0;
+}
+/*----------PADDING-------*/
+.py-1{
+    padding: 1rem 0;
+}
+.py-2{
+    padding: 1.5rem 0;
+}
+.py-3{
+    padding: 2rem 0;
+}
+.py-4{
+    padding: 3rem 0;
+}
+.py-5{
+    padding: 4rem 0;
+}
+.p-1{
+    padding: 1rem 0;
+}
+.p-2{
+    padding: 1.5rem 0;
+}
+.p-3{
+    padding: 2rem 0;
+}
+.p-4{
+    padding: 3rem 0;
+}
+.p-5{
+    padding: 4rem 0;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .grid,
+    .parallax .grid,
+    .popular .grid,
+    .NewPosts .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .parallax {
+        height: auto;
+    }
+
+    .parallax-text {
+        text-align: center;
+        margin-top: 40px;
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .parallax-form {
+        justify-self: center;
+        margin: auto;
+
+    }
+
+    .newsheader,
+    .NewPosts{
+        text-align: center;
+    }
+
+    .newsheader img,
+    .NewPosts img {
+        justify-self: center;
+    }
+    .parallax h1{
+        justify-self: center;
+        padding-top: 100px;
+        font-size: 50px;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    .navbar {
+        height: 70px;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .parallax-form {
+        width: 100%;
+    }
+}

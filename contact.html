@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Isengard Contact</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="Isengard Fantasy books">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta name="theme-color" content="#fafafa">
+
+    <!--------------------------------------->
+    <!--Contact styles: move to common CSS!-->
+    <!--------------------------------------->
+
+    <style>
+
+        html, .con-stage {
+            background-color: #116566;
+            height: 100%;
+        }
+
+        .con-parallax {
+            /* The image used */
+            background-image: url("img/palantir.gif");
+
+            /* Full height */
+            height: 95%;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .con-decor {
+            background-color: #d9b08c;
+        }
+
+        .con-icon {
+            height: 35px;
+            width: 35px;
+        }
+
+    </style>
+
+</head>
+
+<body class="con-stage m-0">
+
+<!---------->
+<!--Navbar-->
+<!---------->
+
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark shadow">
+        <div class="container-fluid">
+            <!--            toggle navbar button-->
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link dark" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="#">Our Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active px-4" aria-current="page" href="contact.html">Contact</a>
+                    </li>
+                    <!--            <li class="nav-item dropdown">-->
+                    <!--                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"-->
+                    <!--                   aria-haspopup="true" aria-expanded="false">-->
+                    <!--                    Dropdown-->
+                    <!--                </a>-->
+                    <!--                <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+                    <!--                    <a class="dropdown-item" href="#">Action</a>-->
+                    <!--                    <a class="dropdown-item" href="#">Another action</a>-->
+                    <!--                    <div class="dropdown-divider"></div>-->
+                    <!--                    <a class="dropdown-item" href="#">Something else here</a>-->
+                    <!--                </div>-->
+                    <!--            </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!------------------>
+<!--Parallax Image-->
+<!------------------>
+
+<div class="con-parallax"></div>
+
+<!------------------>
+<!--Main container-->
+<!------------------>
+
+<main class="w-100">
+
+    <!----------------------->
+    <!--Contact info banner-->
+    <!----------------------->
+
+    <div class="bg-dark text-center pt-1 pb-2 m-auto"><h1 class="text-light" title="Scroll down">Contact Info</h1></div>
+
+    <!----------------------->
+    <!--Contact information-->
+    <!----------------------->
+
+    <div class="container text-center">
+        <div class="row justify-content-around mt-5 mb-5 h-100">
+
+            <!----------------------------->
+            <!--Contact info: Left column-->
+            <!----------------------------->
+
+            <div class="col-lg-7 col-md-12 col-sm-12 mt-4">
+
+                <!---------------->
+                <!--Contact form-->
+                <!---------------->
+
+                <div class="col-lg-12 col-md-12 col-sm-12 rounded-3 p-3 con-decor"><h2>Contact Form</h2>
+                    <form action="https://formspree.io/f/xqkgwnqj"
+                          method="POST" class="form-group">
+                        <div>
+                            <input class="form-control"
+                                   type="text"
+                                   name="name"
+                                   placeholder="Name"><br>
+                        </div>
+                        <div class="form-group"><input class="form-control" type="text" name="_replyto"
+                                                       placeholder="Isengard@lotr.me"><br>
+                        </div>
+                        <div class="form-group"><textarea class="form-control"
+                                                          type="text"
+                                                          name="message"
+                                                          rows="8"
+                                                          placeholder="Your message here"></textarea><br>
+                        </div>
+                        <div><input class="form-control" type="submit"></div>
+                    </form>
+                </div>
+            </div>
+
+            <!------------------------------>
+            <!--Contact info: Right column-->
+            <!------------------------------>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 mt-4">
+
+                <!------------------------------>
+                <!---------Address tab---------->
+                <!------------------------------>
+
+
+                <a href="https://lotr.fandom.com/wiki/Isengard" target="_blank" title="click for more info">
+                    <button class="col-12 border-1 rounded-3 p-3 con-decor text-start mb-3">
+                     <span class="row">
+                            <span class="col-2 m-auto text-center"><img src="img/location-icon.png" alt="location icon" class="con-icon">
+                            </span>
+                        <span class="col-10">
+                            <span class="fw-bolder">
+                        Address
+                            </span><br>Tower of Orthanc, 9999 Nan Curunír - ME</span></span>
+                    </button>
+                </a>
+
+                <!---------------------------->
+                <!---------Phone tab---------->
+                <!---------------------------->
+
+                <a href="tel:0471908782" title="call during hours">
+                    <button class="col-12 border-1 rounded-3 p-3 con-decor text-start mb-3">
+                        <span class="row">
+                            <span class="col-2 m-auto text-center"><img src="img/phone-icon.png" alt="phone icon" class="con-icon">
+                            </span>
+                            <span class="col-10">
+                            <span class="fw-bolder">
+                        Phone
+                    </span><br>555-555-ISENGARD
+
+                        </span>
+                        </span>
+
+                    </button>
+                </a>
+
+                <!---------------------------->
+                <!---------Email tab---------->
+                <!---------------------------->
+
+                <a href="mailto:isengard.phs@gmail.com" title="click to send mail">
+                    <button class="col-12 border-1 rounded-3 p-3 con-decor text-start mb-3">
+                        <span class="row">
+                            <span class="col-2 m-auto text-center"><img src="img/mail-icon.png" alt="email icon" class="con-icon">
+                            </span>
+                            <span class="col-10">
+                            <span class="fw-bolder">
+                        Email
+                    </span><br>isengard.phs@gmail.com
+                        </span>
+                        </span>
+                    </button>
+                </a>
+
+                <!-------------------------------->
+                <!---------Opening hours---------->
+                <!-------------------------------->
+
+                <div class="col-12 border-1 rounded-3 con-decor">
+                    <table class="col-12">
+                        <tr>
+                            <th class="pt-2" colspan="2">Opening hours</th>
+                        </tr>
+                        <tr class="bg-light">
+                            <td>Monday</td>
+                            <td>8am - 18pm</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>8am - 18pm</td>
+                        </tr>
+                        <tr class="bg-light">
+                            <td>Wednesday</td>
+                            <td>8am - 18pm</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>8am - 18pm</td>
+                        </tr>
+                        <tr class="bg-light">
+                            <td>Friday</td>
+                            <td>8am - 18pm</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>8am - 16pm</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</main>
+
+<!---------->
+<!--footer-->
+<!---------->
+
+<footer>
+    <div class="container-fluid bg-dark w-100 shadow">
+        <div class="row mt-2 pt-3 row-cols-1 row-cols-md-3 row-cols-lg-3 px-3">
+
+            <div id="links1" class="col  px-5 text-start text-light">
+                <ul class="list-group-flush border-0 w-100 ">
+                    <li class="list-group-item bg-transparent">
+                        <h5>Links</h5>
+                    </li>
+                    <li class="list-group-item bg-transparent p-0">
+                        <a href="#" class="btn btn-primary text-center text-light">item 1</a>
+                    </li>
+                    <li class="list-group-item bg-transparent p-0">
+                        <a href="#" class="btn btn-primary text-center text-light">item 2</a>
+                    </li>
+                    <li class="list-group-item bg-transparent p-0">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, error fugiat illum nulla quo
+                            repudiandae sed voluptates. Ad asperiores dignissimos ipsum laboriosam, necessitatibus
+                            perferendis, quam quibusdam rerum temporibus vel voluptatibus.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div id="links2" class="col px-5 text-start text-light">
+
+                <ul class="list-group-flush border-0 w-100 ">
+                    <li class="list-group-item bg-transparent">
+                        <h5>FAQ</h5>
+                    </li>
+                    <li class="list-group-item bg-transparent p-0">
+                        <a href="#" class="btn btn-primary text-center text-light">item 1</a>
+                    </li>
+                    <li class="list-group-item bg-transparent p-0">
+                        <a href="#" class="btn btn-primary text-center text-light">item 2</a>
+                    </li>
+                    <li class="list-group-item bg-transparent p-0">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, error fugiat illum nulla
+                            quo
+                            repudiandae sed voluptates. Ad asperiores dignissimos ipsum laboriosam, necessitatibus
+                            perferendis, quam quibusdam rerum temporibus vel voluptatibus.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div id="links3" class="col  px-5 text-start text-light">
+                <ul class="list-group-flush border-0 w-100 ">
+                    <li class="list-group-item bg-transparent">
+                        <h5>Links</h5>
+                    </li>
+                    <li class="list-group-item bg-transparent p-0">
+                        <a href="#" class="btn btn-primary text-center text-light">item 1</a>
+                    </li>
+                    <li class="list-group-item bg-transparent p-0">
+                        <a href="#" class="btn btn-primary text-center text-light">item 2</a>
+                    </li>
+                    <li class="list-group-item bg-transparent p-0">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, error fugiat illum nulla quo
+                            repudiandae sed voluptates. Ad asperiores dignissimos ipsum laboriosam, necessitatibus
+                            perferendis, quam quibusdam rerum temporibus vel voluptatibus.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <hr>
+        <h6 class="m-0 text-light text-center">Congratulations! You have reached the end of the page.</h6>
+    </div>
+</footer>
+
+    <!----------->
+    <!--scripts-->
+    <!----------->
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!--bootstrap scripts-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
