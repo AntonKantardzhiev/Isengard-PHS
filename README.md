@@ -31,7 +31,7 @@ This site uses:
 
 [Bootstrap 5](https://getbootstrap.com/) (experimental) (bit of a mistake really)
 
-###Not a dev on this project? Then avert thine eyes.
+### Not a dev on this project? Then avert thine eyes.
 TODO: preview
 
 ~~TODO: image~~ done and done
